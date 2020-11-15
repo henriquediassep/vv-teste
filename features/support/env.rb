@@ -1,7 +1,6 @@
 require 'byebug'
 require 'faker'
 require 'watir'
-require 'rspec'
 
 CONFIG_HOSTS = YAML.load_file('config/hosts.yml')
 HOSTS        = CONFIG_HOSTS[ENV['ENV'].downcase]
