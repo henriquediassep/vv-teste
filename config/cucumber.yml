@@ -1,0 +1,4 @@
+<% REPORT_NAME = "report-#{Time.now.strftime('%Y%m%d-%H%M%S')}.html"%>
+
+vvteste: --color --format pretty ENV=vvteste --publish-quiet
+vvteste-report: -p vvteste --format html --out <%=REPORT_NAME%> SCREENSHOTSTEP=1 REPORT_NAME=<%= REPORT_NAME %> ENV=vvteste HEADLESS=1
